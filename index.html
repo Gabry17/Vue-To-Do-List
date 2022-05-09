@@ -28,7 +28,7 @@
             <section class="main-bottom">
                 <ul class="list">
                     <li v-for="(element,index) in option" :class="{ done: element.done }">
-                        <p>{{ element.title }}</p>
+                        <p @click="addRemoveLine (index)">{{ element.title }}</p>
                         <i class="fas fa-trash-alt" @click="removeElement (index)"></i>
                     </li>
                 </ul>

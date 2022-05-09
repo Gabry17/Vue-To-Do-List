@@ -29,6 +29,9 @@ const app = new Vue(
             },
             addElement(){
                 this.option.push(this.newtitle);
+            },
+            addRemoveLine(index){
+                this.option[index].done = !this.option[index].done;
             }
         }
     }
