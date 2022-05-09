@@ -27,16 +27,8 @@
             </section>
             <section class="main-bottom">
                 <ul class="list">
-                    <li>
-                        <p>lorem lorem</p>
-                        <i class="fas fa-trash-alt"></i>
-                    </li>
-                    <li>
-                        <p>lorem lorem</p>
-                        <i class="fas fa-trash-alt"></i>
-                    </li>
-                    <li>
-                        <p>lorem lorem</p>
+                    <li v-for="element in option" :class="{ done: element.done }">
+                        <p>{{ element.text }}</p>
                         <i class="fas fa-trash-alt"></i>
                     </li>
                 </ul>
