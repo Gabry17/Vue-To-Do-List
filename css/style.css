@@ -1,0 +1,56 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+header h1{
+    text-align: center;
+    padding: 2rem;
+    color: #29cb51;
+}
+
+/* main */
+.main-top{
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.main-top input{
+    padding: .5em;
+    font-size: 1.2em;
+}
+
+.main-top button{
+    padding: 1em 2em;
+    background-color: #29cb51;
+    border: none;
+    color: white;
+    margin-left: 1em;
+}
+
+.main-bottom{
+    width: 60%;
+    margin: 0 auto;
+    background-color: rgba(3, 238, 62, .3);
+    margin-top: 2em;
+
+}
+
+.list{
+    list-style: none;
+    padding: 1em;
+}
+
+.list li{
+    background-color: white;
+    width: 80%;
+    margin: 1em auto;
+    padding: 1em;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
