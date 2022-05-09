@@ -21,14 +21,18 @@ const app = new Vue(
                     done:true
                 }
             ],
-            newtitle:''
+            message:{
+                title:'',
+                done:true
+            }
         },
         methods:{
             removeElement(index){
                 this.option.splice(index,1);
             },
             addElement(){
-                this.option.push(this.newtitle);
+                this.option.push(this.message);
+                //this.message.title = '';
             },
             addRemoveLine(index){
                 this.option[index].done = !this.option[index].done;
