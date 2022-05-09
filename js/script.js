@@ -5,26 +5,30 @@ const app = new Vue(
         data:{
             option:[
                 {
-                    text:'Fare colazione',
+                    title:'Fare colazione',
                     done:true
                 },
                 {
-                    text:'Seguire lezione',
+                    title:'Seguire lezione',
                     done:false
                 },
                 {
-                    text:'Preparare il pranzo',
+                    title:'Preparare il pranzo',
                     done:false
                 },
                 {
-                    text:'Fare la spesa',
+                    title:'Fare la spesa',
                     done:true
                 }
-            ]
+            ],
+            newtitle:''
         },
         methods:{
             removeElement(index){
                 this.option.splice(index,1);
+            },
+            addElement(){
+                this.option.push(this.newtitle);
             }
         }
     }

@@ -21,14 +21,14 @@
         <main class="container">
             <section class="main-top">
                 <div class="text">
-                    <input type="text" placeholder="aggiungi opzione">
-                    <button>Aggiungi</button>
+                    <input type="text" @keyup.enter="addElement" placeholder="aggiungi opzione" v-model="newtitle">
+                    <button @click="addElement" >Aggiungi</button>
                 </div>
             </section>
             <section class="main-bottom">
                 <ul class="list">
                     <li v-for="(element,index) in option" :class="{ done: element.done }">
-                        <p>{{ element.text }}</p>
+                        <p>{{ element.title }}</p>
                         <i class="fas fa-trash-alt" @click="removeElement (index)"></i>
                     </li>
                 </ul>
